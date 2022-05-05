@@ -6,7 +6,7 @@ const getAll = async () => {
   if (!conn) {
     return null
   }
-console.log("repository staff selection");
+  console.log("repository staff selection");
   return await conn.select('*').from('staff_info')
 }
 
