@@ -29,7 +29,7 @@ const up = async (params) => {
 
       
       console.log("Database created successfully");
-      try{
+      
         console.log("tenant-service b4 bootstrap");
       await bootstrap()
       console.log("uuid in tenant service"+params.uuid);
@@ -37,9 +37,7 @@ const up = async (params) => {
       console.log("tenant-service"+tenant);
       await migrate(tenant)
       //await seed(tenant)
-      done()}catch(err){
-  console.log("my error in tenant service"+err);
-      }
+      done()
       
     } catch (e) {
       console.error("outside od tenant service"+e);

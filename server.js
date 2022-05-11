@@ -6,7 +6,7 @@ const { responseEnhancer } = require('express-response-formatter')
 const sanitize = require('express-sanitizer')
 const { bootstrap } = require('./services/connection-service')
 
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 4000
 const BASE_URL = `/api/${process.env.VERSION || 'v1'}`
 const app = express()
 app.set('port', PORT)
